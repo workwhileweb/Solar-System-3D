@@ -1,2 +1,14 @@
 deno task build
 deno task dev
+
+cd /dist
+deployctl deploy --project= --entrypoint=jsr:@std/http/file-server
+
+Select Vite from the Framework Preset dropdown. This will populate the Entrypoint form field.
+Leave the Install step empty.
+Set the Build step to deno task build.
+Set the Root directory to dist
+Click Deploy Project
+
+https://docs.deno.com/deploy/tutorials/vite/
+https://docs.deno.com/examples/react_tutorial/
